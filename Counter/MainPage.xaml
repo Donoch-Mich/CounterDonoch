@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Counter.MainPage">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <StackLayout 
+                Orientation="Vertical"
+                BackgroundColor="LightGray"
+                Spacing="20"
+                Padding="20"
+                >
+                
+                
+                <Button
+                x:Name="CounterBtnPlus"
+                Text="+" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnPlusCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Label
+                x:Name="Result"
+               Text="0" 
+                Style="{StaticResource SubHeadline}"
+                TextColor="Black"
+                 />
+
+           
+
+
+
+            <Button
+                x:Name="CounterBtnMinus"
+                Text="-" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnMinusCounterClicked"
+                HorizontalOptions="Fill"
+                />
+
+
+            <Button x:Name="Reset"
+                    Text="Click to reset number"
+                    Clicked="ReserCounter"/>
+                </StackLayout>
+
+
+
+                <Button x:Name="addCounterName"
+                    Text="ADD COUNTER"
+                    Clicked="addCounter"/>
+            
+            
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
