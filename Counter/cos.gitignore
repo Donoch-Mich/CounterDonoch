@@ -1,0 +1,12 @@
+# Ignorowanie plików binarnych i katalogów build
+/bin/
+/obj/
+
+# Ignorowanie plików konfiguracyjnych i zale?no?ci
+*.log
+*.tmp
+*.env
+
+# Ignorowanie plików IDE
+.vscode/
+.idea/

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Counter.Controls.element">
+
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+        <StackLayout 
+            Orientation="Vertical"
+            BackgroundColor="Black"
+            Spacing="20"
+            Padding="20"/>
+
+        <Label
+            x:Name="Counter_Name"
+            TextColor="White"
+            HorizontalOptions="Center" />
+
+        <Button
+            x:Name="CounterBtnPlus"
+            Text="+" 
+            SemanticProperties.Hint="Increase the counter"
+            Clicked="OnPlusCounterClicked"
+            HorizontalOptions="CenterAndExpand" />
+
+        <Label
+            x:Name="Result"
+            Style="{StaticResource SubHeadline}"
+            TextColor="Black"
+            HorizontalOptions="Center" />
+
+        <Button
+            x:Name="CounterBtnMinus"
+            Text="-" 
+            SemanticProperties.Hint="Decrease the counter"
+            Clicked="OnMinusCounterClicked"
+            HorizontalOptions="CenterAndExpand" />
+
+        <Button 
+            x:Name="Reset"
+            Text="Click to reset number"
+            SemanticProperties.Hint="Resets the counter to zero"
+            Clicked="ResetCounter"
+            HorizontalOptions="CenterAndExpand"
+            />
+
+        
+
+
+
+        <!--
+        <Button
+            x:Name="RemoveCounterBtn"
+            Text="Usuń licznik"
+            SemanticProperties.Hint="Usuwa licznik"
+            Clicked="OnRemoveCounterClicked"
+            HorizontalOptions="CenterAndExpand" />
+        -->
+
+    </VerticalStackLayout>
+</ContentView>
